@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook Logout – Practice Only</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f2f5;
+    }
+
+    .logout-container {
+      background-color: #ffffff;
+      width: 400px;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+                  0 8px 16px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .logo {
+      color: #1877f2;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .message {
+      font-size: 18px;
+      color: #1c1e21;
+      margin-bottom: 20px;
+    }
+
+    .sub-message {
+      font-size: 14px;
+      color: #606770;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .login-btn {
+      background-color: #1877f2;
+      color: #ffffff;
+    }
+
+    .login-btn:hover {
+      background-color: #166fe5;
+    }
+
+    .cancel-btn {
+      background-color: #e4e6eb;
+      color: #050505;
+    }
+
+    .cancel-btn:hover {
+      background-color: #d8dadf;
+    }
+
+    .note {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #65676b;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    PRACTICE DISCLAIMER:
+    This is a UI-only logout confirmation page inspired by Facebook.
+    No real session handling or authentication is performed.
+  -->
+
+  <div class="logout-container">
+    <div class="logo">facebook</div>
+
+    <div class="message">You’ve logged out</div>
+    <div class="sub-message">
+      You can log back in anytime to continue connecting with friends.
+    </div>
+
+    <button class="btn login-btn" onclick="alert('Practice only: redirect to login page');">
+      Log In Again
+    </button>
+
+    <button class="btn cancel-btn" onclick="alert('Practice only: stay logged out');">
+      Cancel
+    </button>
+
+    <div class="note">
+      Practice project only • No data is collected
+    </div>
+  </div>
+</body>
+</html>
