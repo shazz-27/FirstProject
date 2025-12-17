@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Facebook Login – Practice Only</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -13,14 +14,28 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #f0f2f5;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+
+      /* Facebook logo as background (practice purpose) */
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 300px;
+      background-color: #f0f2f5;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(240, 242, 245, 0.95);
     }
 
     .container {
+      position: relative;
+      z-index: 1;
       display: flex;
       gap: 40px;
       max-width: 900px;
@@ -118,11 +133,11 @@
   </style>
 </head>
 <body>
-  <!--
-    PRACTICE DISCLAIMER:
-    This is a NON-FUNCTIONAL, practice-only UI inspired by Facebook's login page.
-    It does NOT submit data anywhere and should NOT be used for real authentication.
-  -->
+  <!-- PRACTICE DISCLAIMER:
+       UI-only demo inspired by Facebook login.
+       No backend, no authentication, no data collection. -->
+
+  <div class="overlay"></div>
 
   <div class="container">
     <div class="left">
@@ -139,9 +154,7 @@
         <div class="divider"></div>
         <button type="button" class="create-btn">Create New Account</button>
       </form>
-      <div class="note">
-        Practice project only • No data is collected
-      </div>
+      <div class="note">Practice project only • No data is collected</div>
     </div>
   </div>
 </body>
